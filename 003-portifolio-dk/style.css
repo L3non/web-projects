@@ -1,0 +1,107 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    background-color: #121113;
+}
+
+.center{
+    width: 100%;
+    max-width: 1480px;
+    padding: 0 2%;
+    margin: 0 auto;
+    display: flex;
+}
+
+header{
+    margin: 20px 0;
+}
+
+.alignflex{
+    justify-content: space-between;
+}
+
+.logo h2{
+    color: white;
+}
+
+.menu-btn{
+    display: inline-block;
+}
+
+.menu-items a{
+    display: inline-block;
+    color: white;
+    margin: 0 14px;
+    text-decoration: none;
+}
+
+.menu-items a.activate{
+    background-image: linear-gradient(145deg, #f81f01, #ee076e); /* Gradiente em texto*/
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.menu-btn button{
+    border: 1px solid white;
+    padding: 10px 14px;
+    color: white;
+    background-color: transparent;
+    border-radius: 8px;
+    margin: 0 15px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.menu-btn button:hover{
+    background-color: #f9004d;
+}
+
+.main h1{
+    font-size: 90px;
+    background-image: linear-gradient(145deg, #f81f01, #ee076e); /* Gradiente em texto*/
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    width: 550px;
+}
+
+.dif{
+    margin-top: 110px;
+}
+
+.dif-single{
+    margin: 0 30px;
+}
+
+.dif-single span{
+    color: #f9004d;
+    font-size: 30px;
+}
+
+.dif-single h3{
+    color: #A3A1AA;
+    font-size: 19px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.dif-single p{
+    color: #A3A1AA;
+    font-size: 19px;
+}
+
+footer{
+    background-color: #333;
+    text-align: center;
+    padding: 8px;
+    color: #A3A1AA;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
