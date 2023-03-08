@@ -9,4 +9,186 @@
    text-decoration: none;
 }
 
+html{
+   scroll-behavior: smooth;
+}
+
+.max-width{
+   max-width: 1300px;
+   padding: 0 80px;
+   margin: auto;
+}
+
 /* Header */
+
+nav{
+   /*background-color: #00008C;*/
+   font-family: 'Ubuntu', sans-serif;
+
+   width: 100%;
+   padding: 30px 0;
+
+   position: fixed;
+}
+
+nav .max-width{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+nav .logo a{
+   color: #fff;
+
+   font-size: 35px;
+   font-weight: 500;
+}
+
+nav .logo a span{
+   color: #00008C;
+}
+
+nav .menu li{
+   list-style: none;
+
+   display: inline-block;
+}
+
+nav .menu li a{
+   color: #fff;
+
+   font-size: 18px;
+   font-weight: 500;
+
+   margin-left: 25px;
+
+   transition: color 0.3s ease;
+}
+
+nav .menu li a:hover{
+   color: #00008C;
+}
+
+/* END HEADER */
+
+/* HOME */
+
+main{
+   background: url(../images/bg.png) no-repeat center;
+   color: #fff;
+   font-family: 'Ubuntu', sans-serif;
+
+   height: 100vh;
+   min-height: 500px;
+
+   display: flex;
+}
+
+main .max-width{
+   margin: auto 0 auto 40px;
+}
+
+main .home-principal-content .text-1{
+   font-size: 27px;
+}
+
+main .home-principal-content .text-2{
+   font-size: 75px;
+   font-weight: 500;
+
+   margin-left: -3px;
+}
+
+main .home-principal-content .text-3{
+   font-size: 40px;
+
+   margin: 5px 0;
+}
+
+main .home-principal-content .text-3 span{
+   color: #00008C;
+
+   font-weight: 500;
+}
+
+main .home-secundary-content{
+   color: #000;
+
+   max-width: 500px;
+
+   position: absolute;
+   right: 0;
+   text-align: center;
+}
+
+main .home-secundary-content h2{
+   font-family: 'Ubuntu', sans-serif;
+
+   font-size: 32px;
+   font-weight: 500;
+}
+
+main .home-secundary-content p{
+   font-size: 18px;
+}
+
+/* END HOME */
+
+/* MEDIA QUERY */
+
+@media (max-width: 1300px){
+   nav .max-width{
+      margin-left: 0;
+   }
+}
+
+@media (max-width: 991px){
+   nav .max-width{
+      padding: 0 50px;
+   }
+}
+
+@media (max-width: 947px){
+   .max-width{
+      max-width: 800px;
+      padding: 0 50px;
+   }
+
+   nav .menu{
+      background-color: #111;
+
+      width: 100%;
+      height: 100%;
+      left: -100%;
+      top: 0;
+      padding-top: 80px;
+
+      position: fixed;
+      text-align: center;
+
+      transition: all 0.3s ease;
+   }
+
+   nav .menu.active{
+      left: 0;
+   }
+
+   nav .menu li{
+      display: block;
+   }
+
+   nav .menu li a{
+      font-size: 25px;
+
+      display: inline-block;
+      margin: 20px 0;
+   }
+
+   .home-principal-content .text-2{
+      font-size: 70px;
+   }
+
+   .home-principal-content .text-3{
+      font-size: 35px;
+   }
+}
