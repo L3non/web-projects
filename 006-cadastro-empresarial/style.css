@@ -39,3 +39,17 @@ header{
 }
 
 /* END ASIDE */
+
+/* RESPONSIVE */
+
+@media(max-width: 767px){
+   .logo img{
+      width: 19%;
+   }
+
+   header{
+      width: 85.3%;
+   }
+}
+
+/* END RESPONSIVE */
