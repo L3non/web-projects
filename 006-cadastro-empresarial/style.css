@@ -44,11 +44,11 @@ header{
 
 @media(max-width: 767px){
    .logo img{
-      width: 19%;
+      width: 21%;
    }
 
    header{
-      width: 85.3%;
+      width: 77%;
    }
 }
 
